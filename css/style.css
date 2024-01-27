@@ -312,6 +312,17 @@ a:hover{
         background-color: #03081d;
         margin-top: 235px; /* Adjust margin as needed for spacing */
     }
+  .logo h1{
+        font-size: 20px;
+        float: left;
+        padding-left: 0;
+        text-align: center;
+        padding-top: 25px;
+        left: 0;
+    }
+    .logo img{
+        display: none;
+    }
   
 }
 
