@@ -307,9 +307,12 @@ a:hover{
         display: block; /* Change to block to stack below the left element */
         width: 100%;
         /* color: whitesmoke; */
-        background-color: whitesmoke;
+        
+       color: whitesmoke;
+        background-color: #03081d;
         margin-top: 235px; /* Adjust margin as needed for spacing */
     }
+  
 }
 
 
