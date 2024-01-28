@@ -27,3 +27,49 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initial play
     playVideo();
 });
+
+// benefit section , title animate :-
+document.addEventListener("DOMContentLoaded", function () {
+    var element = document.querySelector(".bf-title");
+
+    function handleScroll() {
+        var position = element.getBoundingClientRect();
+
+        // If the element is in the viewport, add the 'visible' class to trigger the animation
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+            element.classList.add("visible");
+        } else {
+            // If the element is out of view, remove the 'visible' class
+            element.classList.remove("visible");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check on page load
+    handleScroll();
+});
+
+
+
+// field section 
+document.addEventListener("DOMContentLoaded", function () {
+    var element = document.getElementById("field-section");
+
+    function handleScroll() {
+        var position = element.getBoundingClientRect();
+
+        // If the element is in the viewport, trigger the animation
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+            element.classList.add("visible");
+        } else {
+            element.classList.remove("visible");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check on page load
+    handleScroll();
+});
+

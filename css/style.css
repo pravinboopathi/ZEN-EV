@@ -1,5 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@200;400;600;800&display=swap');
+
 
 * {
     margin: 0;
@@ -15,7 +16,7 @@ body{
 .toggle-btn{
     width: 35px;
     position: absolute;
-    right: 80px;
+    right: 60px;
     top: 40px;
     display: none;
 }
@@ -260,6 +261,142 @@ a:hover{
 
 }
 
+
+
+/* benefits-section */
+/* benefits-section */
+.benefits-section {
+    margin-top: 100px;
+    background-color: #ffff;
+    overflow: hidden; /* Hide overflow to prevent content from being visible initially */
+}
+
+.benefits-section p {
+    text-align: left;
+    color: #4d4d4d;
+}
+
+.car-sec {
+    margin-top: 100px;
+}
+
+.bf-title {
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 100px 10px 50px 0px;
+    font-family: 'Open Sans', sans-serif;
+    transform: translateX(-100%); /* Initially position the element outside the viewport */
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Adjusted duration and easing for smooth effect */
+}
+
+/* Animation */
+.bf-title.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* 
+.animated {
+    animation: slideInFromLeft 1.5s ease-in-out; Adjust the duration and easing as needed
+} */
+
+
+
+/* icon section  */
+.icons{
+    padding-top: 60px;
+}
+
+.ico-common{
+    border-top-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    margin-right: 30px;
+    box-shadow: rgba(9, 9, 9, 0.1) 0px 0px 30px;
+    height: auto;
+    /* margin-top: 50px ; */
+    margin-bottom: 50px;
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem ;
+    text-align: center;
+    /* padding-right: 40px;
+    padding-left: 40px; */
+
+   }
+
+.ico-common h3{
+    padding-top: 1rem;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+.ico-contain{
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+
+
+
+/* f8f7f6 */
+
+.field-section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #f8f7f6;
+    overflow: hidden;
+    text-align: center; /* Center the text */
+}
+
+.zoom-in {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.field-section.visible .zoom-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px){
     
     .content h1{
@@ -286,15 +423,10 @@ a:hover{
 }
 
 @media screen and (max-width: 576px){
-    .content h1{
-        font-size: 30px;
-    }
-    .main-head {
-        position: relative;
-        z-index: -1;
-        margin-top: -10px;
-        margin-bottom: 100px;
-    }
+  
+     .main-head{
+        display: none;
+     }
 
     /* section 2  */
 
@@ -306,13 +438,11 @@ a:hover{
         z-index: auto;
         display: block; /* Change to block to stack below the left element */
         width: 100%;
-        /* color: whitesmoke; */
-        
-       color: whitesmoke;
+        color: whitesmoke;
         background-color: #03081d;
         margin-top: 235px; /* Adjust margin as needed for spacing */
     }
-  .logo h1{
+    .logo h1{
         font-size: 20px;
         float: left;
         padding-left: 0;
@@ -323,10 +453,39 @@ a:hover{
     .logo img{
         display: none;
     }
-  
+
+    /* benefits section  */
+/* car  */
+.bf-title {
+    font-size: 2.5rem;
 }
+
+.car-sec {
+    margin-top: 10px;
+    margin-left: -100px;
+
+    
+}
+
+
+/* ico section  */
+.ico-contain{
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+
+}
+
+
+
+
 
 
 
 /* test  */
 
+.charging-section{
+    display: none;
+}
